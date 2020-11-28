@@ -26,4 +26,4 @@ up-down arrow keys
 -Audio button: on/off background music
  
  ## Preview
- ![alt text](image2.jpg)
+ ![alt text](image2.JPG)
