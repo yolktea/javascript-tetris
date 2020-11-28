@@ -1,0 +1,166 @@
+:root {
+    --gridbg:rgb(141, 157, 231);
+    --baseColor: rgb(7, 7, 7,70%);
+}
+
+h1{
+    text-align: center;
+    font-size: 230%;
+}
+
+
+
+body {
+    background-image: url(../images/myImage.gif);  
+    background-size: cover;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: whitesmoke;
+    font-size: 0.72rem;
+}
+
+.container {
+    display: inline;
+    position: fixed;
+    top: 190px;
+    right:340px;
+  margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    display: inline;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    color: lightblue;
+    text-shadow: 7px 5px 12px rgba(0,0,0,0.3);
+
+}
+
+.grid {
+    width: 220px;
+    height: 440px;
+    background-color: var(--baseColor);
+    display: flex;
+    flex-wrap: wrap;
+    border: inset 5px var(--gridbg);
+    border-radius: 10px;
+    margin: 0 auto;
+    position: fixed;
+    left: 570px;
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    border: ridge 0.5px rgb(32, 32, 32);
+    margin: 0 auto;
+}
+
+.grid div.taken {
+    border: hidden 1px;
+    width: 22px;
+    height: 22px;
+}
+.tetromino {
+    border-radius: 5px;
+}
+
+.mini-grid {
+    margin-left: 19px;
+    margin-top: 1px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--baseColor);
+    border: inset 5px var(--gridbg);
+}
+
+.mini-grid div {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#audio-icon{
+    margin-top: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#audio-icon .hovertext{
+    visibility: hidden;
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 3px;
+    position: absolute;
+}
+
+
+#audio-icon:hover .hovertext{
+    visibility: visible;
+}
+
+#audio-icon:active{
+    transform: translateY(4px);
+    background-color: gray;
+}
+
+#text {
+    color: black;
+    text-align: justify;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(15, 70, 141, 0.26), 0 17px 50px 0 rgba(0,0,0,0.19); 
+  }
+
+.button {
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    border: outset 0.3rem;
+}
+
+#start-button {
+    background-image: url('../images/start.jpg');
+    background-size: 100% 100%;
+
+}
+
+#reset-button {
+    background-image: url('../images/reset.jpeg');
+    background-size: 100% 100%;
+    margin-top: 15px;
+}
+
+.column {
+    background-image: linear-gradient(cadetblue, rgba(95,158,160, 0));
+    width: 8rem;
+    height: 400px;
+    margin-top: 1%;
+    margin-left: 5%;
+    border-radius: 5px;
+    align-items: center;
+    align-items: center;
+   
+}
+
